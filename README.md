@@ -1,4 +1,4 @@
-# Jeu de Pong en C++
+# README - Jeu de Pong en C++
 
 ## Description
 Ce programme est une implémentation du jeu classique Pong en C++ utilisant la console Windows. Il propose une version améliorée avec des fonctionnalités supplémentaires comme un menu de paramètres, des effets sonores et une interface colorée.
@@ -16,6 +16,9 @@ Ce programme est une implémentation du jeu classique Pong en C++ utilisant la c
   - Affichage des scores en temps réel
 - **Menu pause** : Mettre le jeu en pause avec la touche P
 - **Redimensionnement automatique** de la console pour une meilleure expérience
+
+## Aperçu du jeu
+![Aperçu du jeu Pong](images/pong_game.png)
 
 ## Contrôles
 - **Joueur 1** : 
