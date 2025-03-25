@@ -18,7 +18,7 @@ Ce programme est une implémentation du jeu classique Pong en C++ utilisant la c
 - **Redimensionnement automatique** de la console pour une meilleure expérience
 
 ## Aperçu du jeu
-![Aperçu du jeu Pong](images/pong_game.png)
+![Aperçu du jeu Pong](images/pong_game.png) ![Deuxième aperçu](images/pong_game_2.png)
 
 ## Contrôles
 - **Joueur 1** : 
