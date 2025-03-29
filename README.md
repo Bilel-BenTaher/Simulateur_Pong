@@ -1,4 +1,4 @@
-# Jeu de Pong en C++
+# Jeu de Pong
 
 ## Description
 Ce programme est une implémentation du jeu classique Pong en C++ utilisant la console Windows. Il propose une version améliorée avec des fonctionnalités supplémentaires comme un menu de paramètres, des effets sonores et une interface colorée.
@@ -18,7 +18,8 @@ Ce programme est une implémentation du jeu classique Pong en C++ utilisant la c
 - **Redimensionnement automatique** de la console pour une meilleure expérience
 
 ## Aperçu du jeu
-![Aperçu du jeu Pong](images/pong_game.png) ![Deuxième aperçu](images/pong_game_2.png)
+![Aperçu du jeu Pong](images/pong_game.png) 
+![Deuxième aperçu](images/pong_game_2.png)
 
 ## Contrôles
 - **Joueur 1** : 
@@ -31,14 +32,20 @@ Ce programme est une implémentation du jeu classique Pong en C++ utilisant la c
 - **Paramètres** : W
 - **Quitter** : Q
 
-## Configuration requise
-- Système d'exploitation Windows
-- Compilateur C++ compatible avec les bibliothèques Windows.h et conio.h
+## Installation et Exécution
+### Prérequis
+- Un compilateur compatible C++ (MinGW, MSVC, etc.)
 
-## Compilation et exécution
-1. Compilez le code avec un compilateur C++ (comme g++ ou Visual Studio)
-2. Exécutez le fichier compilé
-3. La console se redimensionnera automatiquement pour le jeu
+### Compilation
+1. Ouvrez un terminal ou une invite de commande.
+2. Compilation sous Windows (MinGW) :
+   ```sh
+   g++ Src/main.cpp Src/GameManager.cpp Src/Ball.cpp Src/Paddle.cpp -IInc -o pong.exe
+   ```
+3. Exécution :
+   ```sh
+    pong.exe
+   ```
 
 ## Paramètres
 Appuyez sur W pendant le jeu pour accéder au menu des paramètres où vous pouvez :
