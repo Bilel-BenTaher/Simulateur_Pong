@@ -4,36 +4,6 @@
 #include <windows.h>  // Pour les fonctions de console Windows
 
 /**
- * @brief Configure la taille de la console Windows
- * @param width Largeur souhaitée en colonnes
- * @param height Hauteur souhaitée en lignes
- * 
- * Cette fonction :
- * 1. Ajuste la taille du buffer console
- * 2. Définit la taille de la fenêtre
- * 3. Masque le curseur
- * 4. Définit un titre pour la fenêtre
- */
-void SetConsoleSize(int width, int height) {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    
-    // 1. Configuration de la taille du buffer
-    COORD coord = { (SHORT)width, (SHORT)height };
-    SetConsoleScreenBufferSize(hConsole, coord);
-    
-    // 2. Ajustement de la taille de la fenêtre
-    SMALL_RECT rect = { 0, 0, (SHORT)(width - 1), (SHORT)(height - 1) };
-    SetConsoleWindowInfo(hConsole, TRUE, &rect);
-    
-    // 3. Masquage du curseur
-    CONSOLE_CURSOR_INFO cursorInfo = {1, FALSE};
-    SetConsoleCursorInfo(hConsole, &cursorInfo);
-    
-    // 4. Définition du titre de la fenêtre
-    SetConsoleTitleW(L"Pong Game - Parametrables");
-}
-
-/**
  * @brief Point d'entrée principal du programme
  * @return Code de sortie (0 pour succès)
  * 
@@ -45,7 +15,7 @@ void SetConsoleSize(int width, int height) {
  */
 int main() {
     // Configuration initiale de la console
-    SetConsoleSize(60, 30);  // 60 colonnes, 30 lignes
+    
     
     // Boucle principale du jeu (permet de rejouer)
     while (true) {
@@ -75,7 +45,7 @@ int main() {
         // Effacement du message précédent
         pos.Y = 22;
         SetConsoleCursorPosition(hConsole, pos);
-        std::cout << "                                                  ";
+        std::cout << "  ";
     }
     
     return 0;  // Fin du programme
